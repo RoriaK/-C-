@@ -6,14 +6,12 @@ int main()
 	int B[10];
 	int i;
 
-	const int num_A = sizeof(A) / sizeof(A[0]);
-	const int num_B = sizeof(B) / sizeof(int);
 
-	for (i = 0; i < num_B; i++)
+	for (i = 0; i < 10; i++)
 	{
-		B[i] = A[i % num_A];
+		B[i] = A[i % 3];
 	}
-	for (i = 0; i < num_B; i++)
+	for (i = 0; i < 10; i++)
 	{
 		printf("%5d", B[i]);
 	}
